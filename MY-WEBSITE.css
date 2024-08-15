@@ -1,0 +1,379 @@
+* {
+    box-sizing: border-box;
+    font-family: "sans-serif", Arial, Helvetica;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Jomhuria&family=Open+Sans:ital,wght@1,300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+nav>a {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #244cd5;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    padding: 20px 200px;
+    position: fixed;
+    background-color: #eeedef;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 1px;
+    z-index: 999;
+}
+
+header>a {
+    font-weight: bold;
+    color: #244cd5;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav>a:hover {
+    color: #142356;
+}
+
+section {
+    padding: 100px 200px;
+
+}
+
+.sec {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    background-image: url(images/pexels-özgür-832811.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    letter-spacing: 1px;
+    padding-left: 120px;
+}
+
+.sec>div>* {
+    margin: 43px 0;
+}
+
+.but {
+    color: white;
+    background-color: #425db8;
+    border-radius: 10px;
+    display: block;
+    width: 185px;
+    height: 44px;
+    text-align: center;
+    padding-top: 14px;
+    font-weight: bold;
+    transition: 0.7s;
+    transition-timing-function: ease;
+    transition-property: transform;
+}
+
+.sec>div>h2>span {
+    font-size: 2em;
+    color: #425db8;
+    font-weight: bold;
+    margin: 20px 0 -21px 0;
+    display: block;
+}
+
+.links-media>* {
+    margin-right: 18px;
+    color: white;
+    font-size: 1.8em;
+}
+
+.sec>div>h2 {
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+.sec>div>h3 {
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.but:hover {
+    transform: scale(1.15);
+    cursor: pointer;
+    background-color: #244cd5;
+}
+
+
+
+.cards {
+    width: 100%;
+    background-color: white;
+    padding: 100px 100px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #244cd5;
+    font-weight: 800;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 30px;
+}
+
+.content>.s {
+    background-color: white;
+    padding: 20px;
+    /* margin: 15px; */
+    box-shadow: 0px 0px 16px 7px #ddd;
+    border-radius: 15px;
+    transition: 0.7s;
+    transition-timing-function: ease;
+    transition-property: transform;
+    cursor: pointer;
+}
+
+.icon {
+    font-size: 100px;
+    font-weight: 700;
+    color: #244cd5;
+    text-align: center;
+    margin: 25px;
+}
+
+.content .s .wr,
+.content .c .wr {
+    text-align: center;
+}
+
+.content .s h3 {
+    color: #244cd5;
+    font-weight: 900;
+    margin: 20px;
+    white-space: nowrap;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.content p {
+    font-size: 20px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    color: black;
+    margin: 15px;
+}
+
+.content>div:hover {
+    transform: scale(1.08);
+}
+
+.content>.p {
+    background-color: white;
+    /* margin: 15px; */
+    border: 2px solid blue;
+    border-radius: 15px;
+    transition: 0.7s;
+    overflow: hidden;
+    min-height: 225px;
+    transition-timing-function: ease;
+    transition-property: transform;
+    cursor: pointer;
+}
+
+.content>.p>.wr {
+    text-align: left;
+    margin: 10px;
+}
+
+.content>.p h3 {
+    font-weight: 800;
+    font-size: 0.8em;
+    display: inline;
+    float: left;
+    margin: 10px;
+}
+
+.content>.p a {
+    display: inline;
+    float: right;
+    color: #244cd5;
+    font-weight: 900;
+    font-size: 0.8em;
+    margin: 10px;
+
+}
+
+.p p {
+    white-space: nowrap;
+    font-size: 0.9em;
+
+}
+
+.content>.p a:hover {
+    color: #821b91;
+}
+
+.content>.p:hover .images {
+    opacity: 0.9;
+}
+
+.content img {
+    width: 100%;
+    max-height: 80%;
+}
+
+.content>.c {
+    background-color: white;
+    padding: 20px;
+    /* margin: 15px; */
+    box-shadow: 0px 0px 16px 7px #ddd;
+    border-radius: 15px;
+    transition: 0.7s;
+    transition-timing-function: ease;
+    transition-property: transform;
+    cursor: pointer;
+}
+
+.c h3 {
+    font-weight: 900;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copy {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    height: 80px;
+    align-items: center;
+    padding: 20px;
+    font-size: 1.3em;
+}
+
+.copy span {
+    color: #244cd5;
+}
+
+.copy a {
+    margin-right: 15px;
+    color: white;
+}
+
+a:hover i {
+    color: #425db8;
+}
+
+@media (max-width:1023px) and (min-width:640px) {
+    header {
+        padding: 12px 20px;
+    }
+
+    nav>a {
+        padding-left: 10px;
+    }
+
+    section {
+        padding: 80px 20px;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    h3 {
+        font-size: 1.6em;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+}
+
+@media (max-width:641px) and (min-width:299px) {
+    header {
+        padding: 5px 10px;
+    }
+
+    nav>a {
+        padding-left: 6px;
+    }
+
+    section {
+        padding: 60px 10px;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    body {
+        font-size: 12px;
+
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    h2 {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width:300px) {
+    header {
+        padding: 2px 5px;
+    }
+
+    nav>a {
+        padding-left: 3px;
+    }
+
+    section {
+        padding: 40px 5px;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    body {
+        font-size: 10px;
+    }
+
+    h2 {
+        font-size: 0.8em;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+}
